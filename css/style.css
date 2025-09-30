@@ -1,0 +1,248 @@
+/*External CSS file for Farm Visit webpages*/
+/*Please see template file for comments explaining common elements of all web pages */
+*{box-sizing: border-box;}
+body{margin:0px}
+
+header{background-color:#ffffff; text-align: center; }
+
+div.flexcontainer{display:flex;align-items:center}
+
+#logo{border-radius:100%; background-color: greenyellow; width:80px; height:80px; margin:20px 0px 0px 80px ;}
+#logo img{ border-radius: 100%; width:80px; height:auto; border:3px solid #006400}
+           
+.head h1{align-self:last baseline;margin:0px 0px 0px 0px;font-size:48px ;width:80%;color:#006400; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}         
+.head p{font-family:Arial, Helvetica, sans-serif; font-size: 16px;color:#636463; margin: 0px 0px 10px 0px}
+      
+.navbar{display: flex;background-color:#006400;text-align: center; justify-content: center;}
+.navbar a{ text-decoration:none; color:white;padding:20px; font-size:12px; font-family: Arial, Helvetica, sans-serif;}
+.navbar a:hover{color:#006400;background-color:rgb(255, 255, 255);}
+.navbar a.active{color:#006400;background-color:rgb(255, 255, 255);}
+
+.container{background-color: rgb(243, 243, 243);}
+        
+footer{background-color:rgb(204, 204, 204);padding:40px;text-align: center;}
+
+/*Home Page Content styling*/
+section>p{margin:0px; font-size:20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+img{width:500px; height:300px}
+
+div.container{
+    display:grid;
+    grid-template-areas:
+    'item1 item1 item2 item3 item3 '
+    'item1 item1 item2 item3 item3 '
+    'item1 item1 item2 item3 item3 '
+    'item1 item1 item2 item3 item3 ';
+}
+aside.item1{
+    display:grid; 
+    grid-template-rows:  1fr 1fr;
+    grid-area:item1;
+    padding:5px 0px;
+    grid-gap:5px;
+    justify-content: center;
+}
+aside.item3{
+    display:grid; 
+    grid-template-rows:  1fr 1fr;
+    grid-area:item3;
+    padding:5px 0px;
+    grid-gap:5px;
+    justify-content: center;
+}
+section.item2{margin-left:20px;padding:40px; grid-area:item2;}
+/*added extra class 'home' along with 'item2' class for index page so that Shop page is not disturbed*/
+section.home{display:grid; place-items:center;} /*To centre align Button*/
+
+.button1 {
+  border:none;
+  text-align: center;
+  display: block; 
+  background-color:limegreen;
+}
+.button1:hover {
+  background-color:rgba(122, 43, 4);
+  color: white;
+}
+.button1 a{display:block;text-decoration: none;color:white;padding: 20px 60px;font-size: 16px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+h3.mainhead{    
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*Activities Page Content styling*/
+.contentbox1{margin:20px; display:flex;flex-direction: row;justify-content:space-around;}
+.contentbox2{margin:20px; display:flex;flex-direction: row;justify-content:space-around;}
+.contentbox3{margin:20px; display:flex;flex-direction: row;justify-content:space-around;}
+.headtext{
+    justify-self: center;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px; 
+    color:rgba(122, 43, 4);
+    font-weight: 600;  
+}
+.box {
+        position: relative;
+        width:400px;
+        border:4px solid rgb(255, 255, 255);
+       box-shadow: 10px -5px 5px rgb(147, 147, 147)
+        }
+.image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+.overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color:rgba(122, 43, 4,.7);
+        }
+.box:hover .overlay {
+         opacity: 1;
+        }
+        .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+hr.line{width:50%;}
+
+/*Our Shop Page styling*/
+ul.products li{font-size:20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+h4{font-size:larger; color:#006400;}
+div.list{font-size:20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+/*Our Zoo Page styling*/
+div.top{margin:20px; display:flex; justify-content: center;}
+div.top p{
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    width:70%;
+    align-content: center;
+    background-color: #ececec; 
+    border-radius: 10px; 
+    padding:10px;
+}
+div.animals{
+    display:flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    }
+div.animals figure{
+    background-color: #ffffff;
+    border-radius:20px; 
+    box-shadow: 10px 5px 5px rgb(147, 147, 147);
+    width:350px; 
+    padding:20px;
+}
+figcaption{font-family: Arial, Helvetica, sans-serif;}
+
+div.animals figure img{width:300px; height:min-content}
+
+/*Our Cafe Page styling*/
+h3.cafehead{
+    text-align: center; background-color:olivedrab;color:#ffffff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:20px;
+    margin:0px;
+}
+div.cafecontainer{
+    display:grid;
+    grid-template-columns:2fr 1fr; 
+}
+div.menu{
+    justify-self:center; /*Aligns a grid item inside a cell along the inline (row) axis*/
+    align-content: center;/* Aligns along the block (column) axis*/
+}
+div.menu a img{width:800px;height:auto;}
+
+div.cafecontainer div.images{
+    display:grid;
+    grid-template-rows: auto auto auto auto;
+    }
+div.cafecontainer div.images img{
+    width:100%;
+    height:auto;
+}
+
+/*Reach Us Page Content styling*/
+.gridcontainer{ 
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin:20px;
+}
+.gridcontainer div.item{padding-left:20px;}
+.gridcontainer div.item p{font-size:18px;}
+
+iframe{width:100%; height:400px;}  /*Google Map*/
+
+/*Responsive design*/
+@media screen and (max-width: 700px) {
+       .navbar{flex-wrap: wrap;}
+       div.flexcontainer {   
+        flex-direction: column;}
+        div#logo{margin:10px auto;}
+        .head h1{margin:auto;width:100%;}
+        /*Home Page Content*/
+        div.container{
+        display:grid;
+        grid-template-areas:
+        'item1'
+        'item2'
+        'item3';}
+        aside.item1{
+            overflow:hidden;
+        }
+        aside.item3{overflow: hidden;
+        } 
+        /*Activities Page*/
+        .contentbox1{margin:0px;flex-direction:column;align-items: center;row-gap:10px;}
+        .contentbox2{margin:0px;flex-direction:column;align-items: center;row-gap:10px;}
+        .contentbox3{margin:0px;flex-direction:column;align-items: center;row-gap:10px;}
+        box{box-shadow:none;}
+
+        /*Animals Page*/
+        div.animals{justify-content:space-around;flex-direction: column;}
+        div.animals figure{margin:10px;}
+   
+        /*Our Cafe Page styling*/
+        div.cafecontainer{
+        display:block;
+        }
+        div.menu a img{width:100%;height:auto;}
+        div.cafecontainer div.images{
+            display:flex; 
+            flex-wrap: wrap;
+            flex-direction: row; 
+        }
+        div.cafecontainer div.images img{
+        width:50%;
+        height:auto;
+        }
+        /*Reach Us Page Content styling*/
+        .gridcontainer{ 
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gridcontainer div.item{ 
+            width:100%;
+        } 
+    }
